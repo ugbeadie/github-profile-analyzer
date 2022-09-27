@@ -1,0 +1,197 @@
+:root {
+    --primary: #363d46;
+    --secondary: #252b33;
+    --body: #ffffff;
+    --text: #cdcad6;
+}
+
+.user {
+    padding: 50px 100px;
+}
+
+.back_btn,.github_btn {
+    font-family: 'Poppins', sans-serif;
+    color: var(--body);
+    background: transparent;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.back_btn:hover,
+.github_btn:hover {
+    color: var(--secondary);
+    background-color: var(--text);
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.bio {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    margin: 10px 0 30px 0;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5px;
+    margin: 30px 0 20px 0;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+}
+
+.first,.second,.third,.fourth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 2px solid var(--text);
+    padding: 10px;
+}
+
+.fourth {
+    border: none !important;
+}
+
+.info h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.info p {
+    font-size: 18px;
+}
+
+.website {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    color: var(--text);
+}
+
+.website a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--body);
+    margin-left: 10px;
+}
+
+.repo_container {
+    margin-top: 80px;
+}
+
+.repo_container h3 {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+}
+
+.repos {
+    background-color: var(--secondary);
+    margin-bottom: 5px;
+    padding: 10px 10px 15px;
+    transition: all 0.2s;
+}
+
+.repos:hover {
+    background-color: #131920;
+}
+
+.repos .name {
+    display: flex;
+    align-items: center;
+}
+
+.repos .name a {
+    text-decoration: none;
+    color: var(--body);
+    margin-left: 8px;
+}
+
+.repos .desc {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    margin: 8px 0;
+}
+
+.repos .specs {
+    display: flex;
+    align-items: center;
+}
+
+.specs div {
+    display: flex;
+    position: relative;
+    margin: 10px 4px 0 0;
+    padding: 0 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.specs .watchers {
+    color: rgb(174, 174, 238);
+    background-color: rgba(83, 83, 241, 0.3);
+}
+
+.specs .stars {
+    color: rgb(70, 199, 70);
+    background-color: rgba(97, 170, 97, 0.3);
+}
+
+.specs .forks {
+    color: rgb(226, 226, 58);
+    background-color: rgb(212, 212, 126, 0.3);
+}
+
+.specs .issues {
+    color: rgb(228, 74, 74);
+    background-color: rgba(185, 36, 36, 0.3);
+}
+
+@media screen and (max-width:1000px) {
+    .user {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        justify-content: center;
+    }
+    .user {
+        padding: 50px 5px;
+    }
+    .first,.second,.third,.fourth {
+        padding: 3px;
+    }
+    .info p {
+        font-size: 15px;
+    }
+    .website {
+        font-size: 14px;
+    }
+}

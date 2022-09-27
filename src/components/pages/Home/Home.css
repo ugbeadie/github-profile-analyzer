@@ -1,0 +1,136 @@
+:root {
+    --primary: #363d46;
+    --secondary: #252b33;
+    --body: #ffffff;
+    --text: #e6e3ee;
+}
+
+nav {
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+nav p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.search {
+    width: 500px;
+    position: relative;
+    margin: 50px 30px;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    height: 52.5px;
+    width: 100%;
+    font-size: 16px;
+    color: var(--secondary);
+    background: var(--text);
+    padding-left: 15px;
+    border: 1px solid var(--text);
+    border-radius: 50px;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+input:focus {
+    border: 3px solid #888;
+    outline: none;
+}
+
+.search .btn {
+    position: absolute;
+    right: 4px;
+    top: 3.5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--body);
+    background: var(--secondary);
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.results {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.users {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 10px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    border-radius: 3px;
+}
+
+.users img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.users p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    font-size: 14px;
+}
+
+.users a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+    .results {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .search {
+        width: 400px;
+    }
+    .results {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .search {
+        width: 100%;
+        margin: 50px 0;
+        padding: 0 10px;
+    }
+    .search .btn {
+        position: absolute;
+        right: 15px;
+        top: 4px;
+    }
+    .results {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
