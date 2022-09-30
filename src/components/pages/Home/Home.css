@@ -21,7 +21,7 @@ nav p {
 .search {
     width: 500px;
     position: relative;
-    margin: 50px 30px;
+    margin: 40px 30px 20px;
 }
 
 input {
@@ -99,6 +99,36 @@ input:focus {
 .users a {
     text-decoration: none;
 }
+
+.limit_per_page {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.limit_per_page select { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 2px 3px;
+}
+
+.limit_per_page select:focus {
+    outline: none;
+}
+
+.pagination {
+    /* width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.pagination {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination button
 
 @media screen and (max-width:1000px) {
     .results {

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home/Home';
 import Profile from './components/pages/Profile/Profile'
 import ScrollToTop from './components/ScrollToTop'
+
 function App() {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { GiCrossedChains } from 'react-icons/gi';
-import { AiFillEye,AiFillStar,AiOutlineFork,AiOutlineInfo } from 'react-icons/ai';
+import { AiFillEye,AiFillStar,AiOutlineFork } from 'react-icons/ai';
 import { BiInfoCircle } from 'react-icons/bi';
 import './pages/Profile/Profile.css'
 
@@ -15,7 +15,7 @@ const Repos = ({repo}) => {
             <a href={html_url} target='_blank'>{name}</a>
         </div>
         <div className='desc'>
-            {description ? <p>{description}</p> : <p>This project does not have a description</p>}
+            {description ? <p>{description}.</p> : <p>This project does not have a description.</p>}
         </div>
         <div className='specs'>
             <div className='watchers'>

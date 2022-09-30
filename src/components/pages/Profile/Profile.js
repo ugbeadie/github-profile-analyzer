@@ -3,7 +3,6 @@ import { Link,useParams } from "react-router-dom";
 import { MdLocationOn } from 'react-icons/md';
 import { IoIosPeople } from 'react-icons/io';
 import { BsFillPeopleFill,BsTwitter } from 'react-icons/bs';
-import avatar from '../../assets/avatar.png'
 import './Profile.css'
 import axios from 'axios';
 import Repos from '../../Repos';
@@ -26,7 +25,7 @@ const User = () => {
   fetchUserInfoAndRepo()
 }, [])
 
-const {avatar_url, login:username, bio, html_url:github_link, 
+  const {avatar_url, login:username, bio, html_url:github_link, 
   location, followers, following, twitter_username, blog, public_repos} = userInfo
 
   return (
