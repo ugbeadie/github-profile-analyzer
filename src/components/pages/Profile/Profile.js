@@ -80,7 +80,7 @@ const User = () => {
         </div>
       </div>
         <section className='repo_container'>
-        <h3>Latest Repositories ({public_repos})</h3>
+        <h3>{username}'s Repositories ({public_repos})</h3>
           {repos.map((repo) => <Repos repo={repo} key={repo.id}/>)}
         </section>
       
