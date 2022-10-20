@@ -77,6 +77,13 @@
     font-size: 16px;
 }
 
+.repo-notif {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    font-size: 18px;
+    margin-top: 30px;
+}
+
 .website {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -161,6 +168,11 @@
 .specs .issues {
     color: rgb(228, 74, 74);
     background-color: rgba(185, 36, 36, 0.3);
+}
+
+.specs span {
+    position: relative;
+    top: 2px;
 }
 
 @media screen and (max-width:1000px) {

@@ -23,7 +23,7 @@ const User = () => {
     setRepos(res[1].data)
   }
   fetchUserInfoAndRepo()
-}, [])
+}, )
 
   const {avatar_url, login:username, bio, html_url:github_link, 
   location, followers, following, twitter_username, blog, public_repos} = userInfo
@@ -75,7 +75,8 @@ const User = () => {
           <div className='website'>
             <p>website:</p>
             {blog ? <a className='website' href={blog} target='_blank'>{blog}</a> : <span>N/A</span>}
-          </div>          
+          </div> 
+          <p className='repo-notif'>// scroll to see user's repos</p>         
 
         </div>
       </div>

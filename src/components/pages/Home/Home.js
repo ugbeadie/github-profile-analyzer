@@ -8,7 +8,8 @@ const Home = () => {
   const [users, setUsers] = useState([])
 
   const handleInputChange = (e) => {
-    setQuery(e.target.value)
+    setQuery(e.target.value) 
+    if (e.key === 'Enter') handleSearch()
   }
   const fetchUserNames = async () => {
     const res = await fetch(`https://api.github.com/search/users?q=${query}`)
@@ -19,7 +20,6 @@ const Home = () => {
     e.preventDefault()
     let users = await fetchUserNames()
     if (query) setUsers(users)
-    // if (e.key === 'Enter') setUsers(users)
   }  
 
   return (
